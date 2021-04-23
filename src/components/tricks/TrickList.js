@@ -18,7 +18,7 @@ export const TrickList = () => {
     useEffect(() => {
         displayTricks()
     }, [])
-    console.log(tricks)
+    
     
     return (
         <section className="trickList">

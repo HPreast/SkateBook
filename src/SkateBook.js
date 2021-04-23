@@ -2,6 +2,7 @@ import { Login } from "./components/auth/Login"
 import { Register } from "./components/auth/Register"
 import { Route, Redirect } from "react-router-dom"
 import './App.css';
+import { NavBar } from "../src/components/nav/NavBar"
 
 export const SkateBook = () => {
   return (
@@ -11,8 +12,8 @@ export const SkateBook = () => {
         if (sessionStorage.getItem("headspace_user")) {
           return (
             <>
-              {/* <NavBar />
-              <ApplicationViews /> */}
+              <NavBar />
+              {/* <ApplicationViews /> */}
             </>
           )
         } else {

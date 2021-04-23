@@ -12,7 +12,7 @@ export const TrickDetails = () => {
         .then(trick =>
             setTricks(trick))
     }
-    console.log(tricks)
+    
     useEffect(() => {
         displayDetails(trickId)
     }, [trickId])

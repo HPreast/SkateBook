@@ -3,6 +3,7 @@ import { Register } from "./components/auth/Register"
 import { Route, Redirect } from "react-router-dom"
 import './App.css';
 import { NavBar } from "../src/components/nav/NavBar"
+import { ApplicationViews } from "../src/components/ApplicationViews"
 
 export const SkateBook = () => {
   return (
@@ -13,7 +14,7 @@ export const SkateBook = () => {
           return (
             <>
               <NavBar />
-              {/* <ApplicationViews /> */}
+              <ApplicationViews />
             </>
           )
         } else {

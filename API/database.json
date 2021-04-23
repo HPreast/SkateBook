@@ -10,5 +10,87 @@
       "name": "Bryan Ford",
       "id": 2
     }
+  ],
+  "tricks": [
+    {
+      "id": 1,
+      "name": "Ollie",
+      "type": "Basic",
+      "difficulty": 1,
+      "description": "The skateboard ollie is when you jump and the board sticks to your feet. You can learn how to ollie right here.",
+      "tips": ["Place your feet","Crouch at the knees","Jump fast","Pop hard at the same time","Rise with the board","Level it out a bit","Land on the board and crouch for balance"]
+    },
+    {
+      "id": 2,
+      "name": "Pop Shuvit",
+      "type": "Flip",
+      "difficulty": 2,
+      "description": "A flat board spin while doing an ollie. This trick can spin 180, 360, 540 or more.",
+      "tips": ["When you pop the ollie you need to scoop forward your back foot and move your front foot back slower and level.","When popping you want to jump backward to stay over the board.","Once in the air pull your feet up and out of the way.","When the board has rotated almost 180-degrees throw your feet at it and catch it.","Once you catch it you can land and roll away."]
+    },
+    {
+      "id": 3,
+      "name": "Kickflip",
+      "type": "Flip",
+      "difficulty": 3,
+      "description": "Do an ollie, use your toe to flip the board one full rotation and land on it. Next to the ollie a kickflip is the biggest skateboard trick there is. Every skater wants to do it. Flip tricks are what makes skateboard tricks popular. When you see someone jump and flip the board using only their feet. It is something just a little magical.",
+      "tips": ["Pop the board with a good size ollie.","While popping flick your toe off the edge towards the nose. The timing and angle will take a while to figure out. Experiment with it.","Once you have started the flip follow through with your front foot and hold it out over the board.","Stay in the air long enough for the flip to happen.","When you see the grip tape coming back around throw both your feet at the board and land on it.","At first you need to be deliberate and throw your feet at the board to catch it. Soon it will become second nature."]
+    },
+    {
+      "id": 4,
+      "name": "Manual",
+      "type": "Basic",
+      "difficulty": 1,
+      "description": "aka a wheelie. Rolling on the back two wheels of the skateboard. A fun trick that requires a lot of balance. Hold the manual as long as you can.",
+      "tips": ["To do a manual you need to find your balance over the back wheels.","Place you foot on the tail kick.","Then put more weight on the tail to lift it.","There is a sweet spot with the wheels and tail in the air. You need to find that spot and try to hold it."]
+    },
+    {
+      "id": 5,
+      "name": "Drop In",
+      "type": "Basic",
+      "difficulty": 2,
+      "description": "From tail stall at the top of a ramp. Dropping the front wheels down and rolling into the ramp. Scary!",
+      "tips": ["Put the board on the coping with the tail on top and the wheels sort of snug on the ramp. - Put your feet on the board in a comfortable riding stance. With your back foot on the tail and your front foot on the front area of the board.","You need to be able to stand there will most of your weight on the back foot and the front foot firmly planted on the deck. The key is to stand there in position comfortably. Do not through your foot on the front just before you drop in. If you miss the deck then you will eat the concrete. Plant the front foot where you want it and stay in position. This can be done as you get more comfortable with the trick.","You want to tip your wheels and body into the ramp until you are perpendicular with the angle of the ramp. Just like you would be when rolling on flat. To do this tip over into the ramp like a teapot pouring. Shoulders, hips, feet and board all in line. You will tip until your wheels hit and your body in perpendicular with the ramp.","When your wheels hit crouch your kness a bit and just roll away like you would when pumping the ramp."]
+    },
+    {
+      "id": 6,
+      "name": "Boardslide",
+      "type": "Grind",
+      "difficulty": 4,
+      "description": "Sliding on the center of the board between the trucks facing forwards.",
+      "tips": ["Facing away from the curb, roll at the curb at a 45 ° angle.","Place your back foot on the tail and your front foot in front of the hardware partly on the nose.","When you get close lift the front wheels up enough to get them over the curb.","Let the wheels clear the curb, then put the front down.","Connect the deck with the curb.","Pull the back wheels up and start sliding. You will slide faster than you roll so be ready for it.","Turn the board perpendicular to the curb.","Stay on the middle of the concave slightly on your heels. Too much on your toes and you will grip, stop and fall forward head over heals. Too much on your heels and the board will slide out from under you. Letting you land on the curb on your butt. That is painful.","Stay in the slide. It's super fun.","Compress your knees to maintain balance.","Slide right to the end and place more weight on your back wheels.","When you get off the end you want your back wheels to land first allowing you to turn out and roll away."]
+    },
+    {
+      "id": 7,
+      "name": "50-50",
+      "type": "Grind",
+      "difficulty": 4,
+      "description": "The 50-50 grind is where both trucks are grinding on the edge. 50% on the front truck and 50% on the back truck",
+      "tips": ["Roll toward the curb at less than a 30° angle with some speed.","When you get within 6”[150mm] start to ollie.","Ollie up onto the curb aiming your back truck at the corner. Aim that truck to land with the hanger on the corner. You want the truck to lock in with the wheel pushed right up to the curb.","Put that front truck down on the hanger too.","Get your weight more on the back truck to keep the grind going.","Grind until you stop.","Then just turn out with a kickturn or pop."]
+    },
+    {
+      "id": 8,
+      "name": "Frontside 180 Ollie",
+      "type": "Basic",
+      "difficulty": 2,
+      "description": "An air or ollie where the skater and board spin a half rotation. You will take off going your normal stance and land switch or fakie.",
+      "tips": ["Place your back foot in ollie position.","Place your front foot close to ollie position with you toe hanging over the toeside of the board about an inch.","When crouching to ollie turn your front shoulder toeside towards the back. You want to wind your body up for the coming rotation.","As you start to jump for the ollie turn your body frontside. Look frontside letting your shoulders and the rest of your body follow the rotation.","Pop the board and begin the ollie.","Your feet will follow the rest of your body in frontside rotation.","To land put down the front truck.","You can finish up the rotation by pivoting around on the front truck."]
+    },
+    {
+      "id": 9,
+      "name": "Backside 180 Ollie",
+      "type": "Basic",
+      "difficulty": 2,
+      "description": "An air or ollie where the skater and board spin a half rotation. You will take off going your normal stance and land switch or fakie.",
+      "tips": ["Place your back foot in ollie position.","Place your front foot close to ollie position.","When crouching to ollie turn your front shoulder heelside. Face away from the direction you are rolling. You want to wind your body up for the coming rotation.","As you start to jump for the ollie turn your body backside. Look backwards letting your shoulders and the rest of your body follow the rotation.","Pop the board and begin the ollie, you will be backwards in the air.","Your feet will follow the rest of your body.","To land put down the front truck.","You can finish up the rotation by pivoting around on the front truck."]
+    },
+    {
+      "id": 10,
+      "name": "HeelfLip",
+      "type": "Flip",
+      "difficulty": 4,
+      "description": "Using your heel to flip the board to the toe side while doing an ollie. This trick will come easy if you have mastered the kickflip.",
+      "tips": ["Pop the board with a good size ollie and jump backwards to keep the board under you.","Wait just a bit to get into the air. You need to give this trick time to get into the air before you flick.","Flick your heel all the way over.","Once you have started the flip, follow through with your front foot and hold it out over the board.","Stay in the air long enough for the flip to happen. It will happen under you so you can't see it well. You might need to adjust the height of your jump or suck your legs up to give you more time. With heelflips you need to jump backwards just a little.","When you see the grip tape coming back around throw both your feet at the board and land on it."]
+    }
   ]
 }

@@ -22,7 +22,7 @@ console.log(users)
                 <p><strong>Bio: </strong>{users.bio}</p>
             </div>
             <div className="progressRecords">
-
+                
             </div>
         </section>    
     </>

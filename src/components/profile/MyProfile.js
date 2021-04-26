@@ -5,6 +5,7 @@ import { useHistory } from "react-router-dom"
 import { deleteEntry } from "../../modules/EntryManager";
 import { PracticeTricks } from "./PracticeTricks";
 import { getUserPracticeTricks } from "../../modules/UserManager";
+import { LibraryList } from "./LibraryList";
 
 export const MyProfile = () => {
     const [users, setUsers] = useState({})
@@ -58,7 +59,12 @@ export const MyProfile = () => {
                     Add New Entry
                 </button>
                 <div className="practiceList">
+                <h2>My Practice</h2>
                 <PracticeTricks />
+                </div>
+                <div className="libraryList">
+                <h2>My Library</h2>
+                    <LibraryList />
                 </div>
             </section>
         </>

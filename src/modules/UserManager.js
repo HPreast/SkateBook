@@ -32,3 +32,13 @@ export const deletePractice = (id) => {
     })
     .then(response => response.json())
 }
+export const updateList = (trickObj) => {
+    return fetch(`http://localhost:8088/practice/${trickObj.id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(trickObj)
+    })
+    .then(response => response.json())
+}

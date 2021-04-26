@@ -187,8 +187,14 @@
     {
       "id": 1,
       "userId": 1,
+      "trickId": 2,
+      "isComplete": true
+    },
+    {
+      "id": 1,
+      "userId": 1,
       "trickId": 1,
-      "isComplete": false
+      "isComplete": true
     }
   ]
 }

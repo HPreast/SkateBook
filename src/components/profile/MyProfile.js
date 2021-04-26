@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getUserById, getUserEntries } from "../../modules/UserManager";
 import { EntryCard } from "../entries/entryCard"
 import { useHistory } from "react-router-dom"
+import { deleteEntry } from "../../modules/EntryManager";
 
 export const MyProfile = () => {
     const [users, setUsers] = useState({})
@@ -21,7 +22,11 @@ export const MyProfile = () => {
                 return setEntries(entry)
             })
     }
-    console.log(entries)
+
+    const handleDelete = (id) => {
+        deleteEntry(id)
+        .then(() => currentUserEntries())
+    }
 
     useEffect(() => {
         currentUserEntries()
@@ -41,6 +46,7 @@ export const MyProfile = () => {
                         <EntryCard
                             key={entry.id}
                             entry={entry}
+                            handleDelete={handleDelete}
                         />)}
                 </div>
                 <button type="button" className="btn btn-primary"

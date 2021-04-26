@@ -3,6 +3,8 @@ import { getUserById } from "../../modules/UserManager";
 
 export const MyProfile = () => {
     const [users, setUsers] = useState({})
+    const [entries, setEntries] = useState({})
+
     const loggedInUser = JSON.parse(sessionStorage.getItem("headspace_user"))
 
     const currentUser = () => {
@@ -10,7 +12,7 @@ export const MyProfile = () => {
         .then(user => 
             setUsers(user))
     }
-console.log(users)
+
     useEffect(() => {
         currentUser()
     }, [loggedInUser])

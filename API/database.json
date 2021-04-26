@@ -190,11 +190,11 @@
       "id": 2
     },
     {
+      "id": 3,
       "userId": 1,
       "date": "2021-04-26",
       "mood": "Nervous",
-      "entry": "Testing",
-      "id": 3
+      "entry": "Testing edit"
     }
   ]
 }

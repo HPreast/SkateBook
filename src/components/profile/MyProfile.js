@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { getUserById } from "../../modules/UserManager";
+import { getUserById, getUserEntries } from "../../modules/UserManager";
+import { EntryCard } from "../entries/entryCard"
 
 export const MyProfile = () => {
     const [users, setUsers] = useState({})
@@ -13,6 +14,16 @@ export const MyProfile = () => {
             setUsers(user))
     }
 
+    const currentUserEntries = () => {
+        getUserEntries(loggedInUser)
+        .then(entry => 
+            setEntries(entry))
+    }
+
+    useEffect(() => {
+        currentUserEntries()
+    }, [])
+
     useEffect(() => {
         currentUser()
     }, [loggedInUser])
@@ -23,8 +34,12 @@ export const MyProfile = () => {
                 <img src={`${users.photo}`} alt="default profile picture"/>
                 <p><strong>Bio: </strong>{users.bio}</p>
             </div>
-            <div className="progressRecords">
-                
+            <div className="entryCards">
+                {entries.map(entry =>
+                    <EntryCard 
+                    key={entry.id}
+                    entry={entry}
+                    />)}
             </div>
         </section>    
     </>

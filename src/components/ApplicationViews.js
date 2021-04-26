@@ -4,6 +4,7 @@ import { TrickList } from "../components/tricks/TrickList"
 import { MyProfile } from "./profile/MyProfile"
 import { TrickDetails } from "./tricks/TrickDetails"
 import { EntryForm } from "../components/entries/entryForm"
+import { EditEntry } from "../components/entries/entryEditForm"
 
 export const ApplicationViews =() => {
     return (
@@ -19,6 +20,9 @@ export const ApplicationViews =() => {
         </Route>
         <Route path="/entries/create">
             <EntryForm />
+        </Route>
+        <Route path="/entries/:entryId(\d+)/edit">
+            <EditEntry />
         </Route>
     </>    
     )

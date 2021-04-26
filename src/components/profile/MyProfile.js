@@ -3,10 +3,14 @@ import { getUserById, getUserEntries } from "../../modules/UserManager";
 import { EntryCard } from "../entries/entryCard"
 import { useHistory } from "react-router-dom"
 import { deleteEntry } from "../../modules/EntryManager";
+import { PracticeTricks } from "./PracticeTricks";
+import { getUserPracticeTricks } from "../../modules/UserManager";
 
 export const MyProfile = () => {
     const [users, setUsers] = useState({})
     const [entries, setEntries] = useState([])
+    
+
     const history = useHistory();
     const loggedInUser = JSON.parse(sessionStorage.getItem("headspace_user"))
 
@@ -53,6 +57,9 @@ export const MyProfile = () => {
                     onClick={() => history.push("/entries/create")}>
                     Add New Entry
                 </button>
+                <div className="practiceList">
+                <PracticeTricks />
+                </div>
             </section>
         </>
     )

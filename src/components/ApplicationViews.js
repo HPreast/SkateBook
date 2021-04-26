@@ -3,6 +3,7 @@ import { Route } from "react-router-dom"
 import { TrickList } from "../components/tricks/TrickList"
 import { MyProfile } from "./profile/MyProfile"
 import { TrickDetails } from "./tricks/TrickDetails"
+import { EntryForm } from "../components/entries/entryForm"
 
 export const ApplicationViews =() => {
     return (
@@ -15,6 +16,9 @@ export const ApplicationViews =() => {
         </Route>
         <Route exact path="/myProfile">
             <MyProfile />
+        </Route>
+        <Route path="/entries/create">
+            <EntryForm />
         </Route>
     </>    
     )

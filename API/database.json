@@ -191,10 +191,10 @@
       "isComplete": false
     },
     {
-      "id": 2,
       "userId": 1,
       "trickId": 1,
-      "isComplete": true
+      "isComplete": true,
+      "id": 3
     }
   ]
 }

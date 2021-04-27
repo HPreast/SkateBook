@@ -45,6 +45,10 @@ export const MyProfile = () => {
                     <img src={`${users.photo}`} alt="default profile picture" />
                     <p><strong>Bio: </strong>{users.bio}</p>
                 </div>
+                <button type="button" className="btn btn-primary"
+                    onClick={() => history.push("/entries/create")}>
+                    Add New Entry
+                </button>
                 <div className="entryList">
                     {entries.map(entry =>
                         <EntryCard
@@ -53,10 +57,6 @@ export const MyProfile = () => {
                             handleDelete={handleDelete}
                         />)}
                 </div>
-                <button type="button" className="btn btn-primary"
-                    onClick={() => history.push("/entries/create")}>
-                    Add New Entry
-                </button>
                 <div className="myLists">
                     <PracticeTricks />
                 </div>

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react"
 import { useHistory } from "react-router";
 import { getTricks } from "../../modules/TrickManager";
 import { TrickCard } from "./TrickCard";
-// import { trickList } from "../../images/trickList.jpg"
+import trickList from "../images/trickList.jpg"
 
 export const TrickList = () => {
     const [tricks, setTricks] = useState([]);
@@ -24,7 +24,7 @@ export const TrickList = () => {
         <section className="trickList">
             <h3 className="listHeader">Trick List</h3>
             {/* img link is currently broken */}
-            <img src={require("../../images/trickList.jpg")} alt="Person doing a trick on a skateboard" />
+            <img src={trickList} alt="Person doing a trick on a skateboard" />
             <div className="listContainer">
                 {tricks.map(trick => 
                     <TrickCard 

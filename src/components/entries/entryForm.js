@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
 import { addEntry } from "../../modules/EntryManager";
+import "../profile/MyProfile.css"
 
 export const EntryForm = () => {
     const [isLoading, setIsLoading] = useState(false)
@@ -29,11 +30,11 @@ export const EntryForm = () => {
     }
     return (
         <section className="entryForm">
-            <form>
+            <form className="form">
                 <h2>New Entry</h2>
                 <fieldset>
                     <div className="formGroup">
-                        <label htmlFor="date">Date:</label>
+                        <label htmlFor="date" className="label">Date: </label>
                         <input type="date"
                             id="date"
                             className="form-control"
@@ -46,7 +47,7 @@ export const EntryForm = () => {
                 </fieldset>
                 <fieldset>
                 <div className="formGroup">
-                        <label htmlFor="mood">Mood:</label>
+                        <label htmlFor="mood" className="label">Mood: </label>
                         <input type="text"
                             id="mood"
                             className="form-control"
@@ -59,7 +60,7 @@ export const EntryForm = () => {
                 </fieldset>
                 <fieldset>
                 <div className="formGroup">
-                        <label htmlFor="entry">Entry:</label>
+                        <label htmlFor="entry" className="label">Entry: </label>
                         <input type="text"
                             id="entry"
                             className="form-control"

@@ -4,14 +4,14 @@
       "id": 1,
       "name": "Hunter Preast",
       "email": "hunter@email.com",
-      "photo": "../../images/DefaultUserSkateBook.jpg",
+      "photo": "",
       "bio": "Skater from Nashville trying to improve and learn some new things."
     },
     {
       "email": "Bryan@email.com",
       "name": "Bryan Ford",
       "id": 2,
-      "photo": "../../images/DefaultUserSkateBook.jpg",
+      "photo": "DefaultUserSkateBook.jpg",
       "bio": "Sponsored skater trying to get more organized."
     }
   ],

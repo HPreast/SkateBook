@@ -42,7 +42,7 @@ export const MyProfile = () => {
         <>
             <section className="profileContainer">
                 <div className="profileInfo">
-                    <img src={`${users.photo}`} alt="default profile picture" />
+                    <img src={require(`../images/${users.photo? users.photo : "DefaultUserSkateBook.jpg"}`).default} alt="default profile picture" />
                     <p><strong>Bio: </strong>{users.bio}</p>
                 </div>
                 <button type="button" className="btn btn-primary"

@@ -28,6 +28,7 @@
 
 //     return (
 //         <section className="libraryList">
+//             <h2>My Library</h2>
 //             <div className="libraryCards">
 //                 {library.map(trick => 
 //                     <LibraryCard 

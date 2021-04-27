@@ -42,10 +42,10 @@ export const EditEntry = () => {
     return ( 
         <section className="entryForm">
             <form>
-                <h2>New Entry</h2>
+                <h2>Update Entry</h2>
                 <fieldset>
                     <div className="formGroup">
-                        <label htmlFor="date">Date:</label>
+                        <label htmlFor="date">Date: </label>
                         <input type="date"
                             id="date"
                             className="form-control"
@@ -58,7 +58,7 @@ export const EditEntry = () => {
                 </fieldset>
                 <fieldset>
                 <div className="formGroup">
-                        <label htmlFor="mood">Mood:</label>
+                        <label htmlFor="mood">Mood: </label>
                         <input type="text"
                             id="mood"
                             className="form-control"
@@ -71,7 +71,7 @@ export const EditEntry = () => {
                 </fieldset>
                 <fieldset>
                 <div className="formGroup">
-                        <label htmlFor="entry">Entry:</label>
+                        <label htmlFor="entry">Entry: </label>
                         <input type="text"
                             id="entry"
                             className="form-control"
@@ -85,7 +85,7 @@ export const EditEntry = () => {
                 <button className="btn btn-primary"
                 onClick={handleEdit}
                 disabled={isLoading}>
-                Save Entry
+                Update Entry
                 </button>
             </form>
         </section>

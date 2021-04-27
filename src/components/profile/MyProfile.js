@@ -4,7 +4,7 @@ import { EntryCard } from "../entries/entryCard"
 import { useHistory } from "react-router-dom"
 import { deleteEntry } from "../../modules/EntryManager";
 import { PracticeTricks } from "./PracticeTricks";
-import { getUserPracticeTricks } from "../../modules/UserManager";
+
 
 export const MyProfile = () => {
     const [users, setUsers] = useState({})
@@ -57,8 +57,8 @@ export const MyProfile = () => {
                     onClick={() => history.push("/entries/create")}>
                     Add New Entry
                 </button>
-                <div className="practiceList">
-                <PracticeTricks />
+                <div className="myLists">
+                    <PracticeTricks />
                 </div>
             </section>
         </>

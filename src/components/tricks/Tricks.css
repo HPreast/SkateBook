@@ -1,0 +1,17 @@
+.listContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.trickCard {
+    width: 300px;
+    text-align: center;
+    background: #799C9C;
+    margin: 1em;
+}
+.trickCard button {
+    background: #EBFBFA;
+    color: black;
+}

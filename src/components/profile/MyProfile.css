@@ -73,12 +73,7 @@ h2 {
     margin: 100px;
     height: fit-content;
 }
-.form {
-    /* align-content: center; */
-    /* grid-column: 3/7; */
-    /* grid-row: 1/9;  */
-    /* background: #799C9C; */
-} 
+
 .form-control {
     display: inline;
     width: 90%;

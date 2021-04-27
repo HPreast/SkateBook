@@ -4,6 +4,7 @@ import { useHistory } from "react-router";
 import { getTricks } from "../../modules/TrickManager";
 import { TrickCard } from "./TrickCard";
 import trickList from "../images/trickList.jpg"
+import "./Tricks.css"
 
 export const TrickList = () => {
     const [tricks, setTricks] = useState([]);

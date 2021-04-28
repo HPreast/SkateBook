@@ -1,0 +1,70 @@
+.listContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    bottom:0px;
+    max-height:25%;
+    overflow:auto;
+    position:absolute;
+    width:100%;
+}
+.trickCard {
+    width: 300px;
+    text-align: center;
+    background: #799C9C;
+    margin: 1em;
+}
+.trickCard button {
+    background: #EBFBFA;
+    color: black;
+}
+#trickListImg {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 590px;
+}
+h2 {
+    text-align: center;
+}
+#practiceBtn {
+    position:absolute;
+    top: 60px;
+    left:10px;
+}
+#libraryBtn {
+    position:absolute;
+    top: 60px;
+    right:10px;
+}
+.detailContainer {
+    /* display: inline-block; */
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.trickSummary {
+    display: flex;
+    flex-direction: column;
+    background: #799C9C;
+    color: whitesmoke;   
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+strong {
+    color: black;
+}
+p {
+    margin:0;
+}
+.summary {
+    margin-bottom: 1em;
+}
+.trickGif {
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}

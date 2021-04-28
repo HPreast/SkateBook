@@ -23,9 +23,9 @@ export const TrickList = () => {
     
     return (
         <section className="trickList">
-            <h3 className="listHeader">Trick List</h3>
+            <h2 className="listHeader">Trick List</h2>
             {/* img link is currently broken */}
-            <img src={trickList} alt="Person doing a trick on a skateboard" />
+            <img id="trickListImg" src={trickList} alt="Person doing a trick on a skateboard" />
             <div className="listContainer">
                 {tricks.map(trick => 
                     <TrickCard 

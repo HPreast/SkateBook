@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { getTrickById } from "../../modules/TrickManager"
 import { addPractice } from "../../modules/UserManager";
+import { YoutubeEmbed } from "./YoutubeEmbed";
 
 export const TrickDetails = () => {
     const [tricks, setTricks] = useState([]);
@@ -22,9 +23,11 @@ export const TrickDetails = () => {
             trickId: id,
             isComplete: false
         }
-        window.confirm("Would you like to add this trick to your practice list?")
-        addPractice(newTrick)
+        let yes = window.confirm("Would you like to add this trick to your practice list?")
+        if(yes === true) {
+            addPractice(newTrick) 
         .then(() => displayDetails())
+        }
     }
 
     const handleAddToLibrary = (id) => {
@@ -33,9 +36,11 @@ export const TrickDetails = () => {
             trickId: id,
             isComplete: true
         }
-        window.confirm("Would you like to add this trick to your library?")
-        addPractice(newTrick)
+        let yes = window.confirm("Would you like to add this trick to your library?")
+        if(yes === true) {
+            addPractice(newTrick) 
         .then(() => displayDetails())
+        }
     }
     
     useEffect(() => {
@@ -52,6 +57,9 @@ export const TrickDetails = () => {
             </div>
             <div className="trickGif">
                 <img src={tricks.gif}></img>
+            </div>
+            <div className="embedYT">
+                <YoutubeEmbed embedId={tricks.yt}/>
             </div>
         </section>
     )

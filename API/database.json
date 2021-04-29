@@ -201,6 +201,13 @@
       "mood": "Confident",
       "entry": "Landed my first pop shuvit today!",
       "id": 1
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "date": "2021-04-29",
+      "mood": "Confident",
+      "entry": "Testing 2"
     }
   ],
   "practice": [
@@ -217,10 +224,10 @@
       "isComplete": true
     },
     {
-      "id": 4,
       "userId": 1,
       "trickId": 3,
-      "isComplete": false
+      "isComplete": false,
+      "id": 5
     }
   ],
   "friends": [

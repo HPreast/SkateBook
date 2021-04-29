@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import { deleteFriend, getUserFriends } from "../../modules/UserManager"
 import { FriendCard } from "./friendCard"
 import { useHistory } from "react-router-dom"
+import "../friends/friends.css"
 
 
 export const FriendsList = () => {
@@ -28,7 +29,7 @@ export const FriendsList = () => {
     }, [])
     return (
         <section className="friendsList">
-            <h2>My Friends</h2>
+            <h2>My Friends</h2><hr></hr>
             <div className="friendCards">
                 {friends.map(friend =>
                     <FriendCard 
@@ -37,7 +38,7 @@ export const FriendsList = () => {
                     handleDelete={handleDelete}
                     />)}
             </div>
-            <button type="button" className="btn btn-primary" onClick={() => history.push("/friends/search")}>Add a Friend</button>
+            <button type="button" id="addFriend" className="btn btn-primary" onClick={() => history.push("/friends/search")}>Add a Friend</button>
         </section>
     )
 }

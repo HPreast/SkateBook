@@ -23,7 +23,7 @@ export const TrickList = () => {
     
     return (
         <section className="trickList">
-            <h2 className="listHeader">Trick List</h2>
+            <h2 className="listHeader">Trick List</h2><hr></hr>
             <img id="trickListImg" src={trickList} alt="Person doing a trick on a skateboard" />
             <div className="listContainer">
                 {tricks.map(trick => 

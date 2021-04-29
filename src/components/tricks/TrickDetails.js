@@ -50,7 +50,7 @@ export const TrickDetails = () => {
         <section className="detailContainer">
             <button type="button" className="btn btn-primary" id="practiceBtn"onClick={() => handleAddToPractice(tricks.id)}>Add to Practice</button>
             <button type="button" className="btn btn-primary" id="libraryBtn"onClick={() => handleAddToLibrary(tricks.id)}>Add to Library</button>
-            <h2 className="detailsName">{tricks.name}</h2>
+            <h2 className="detailsName">{tricks.name}</h2><hr></hr>
             <div className="trickSummary">
                 <p><strong>Description: </strong></p><p className="summary">{tricks.description}</p>
                 <p><strong>Tips: </strong></p><p className="summary">{tricks.tips}</p>

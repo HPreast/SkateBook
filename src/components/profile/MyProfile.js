@@ -7,6 +7,7 @@ import { getUserPracticeTricks, deletePractice, updateList } from "../../modules
 import { PracticeCard } from "../profile/PracticeCards"
 import { LibraryCard } from "../profile/LibraryCards"
 import "./MyProfile.css"
+import { FriendsList } from "../friends/friendsList";
 
 
 export const MyProfile = () => {
@@ -143,6 +144,9 @@ export const MyProfile = () => {
                     trick={trick}
                     handleDelete={handleDelete}
                     handleRecall={handleRecall} />)}
+            </div>
+            <div className="friendList">
+                <FriendsList />
             </div>
             </section>
         </>

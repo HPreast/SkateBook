@@ -11,7 +11,7 @@
       "email": "Bryan@email.com",
       "name": "Bryan Ford",
       "id": 2,
-      "photo": "DefaultUserSkateBook.jpg",
+      "photo": "",
       "bio": "Sponsored skater trying to get more organized."
     }
   ],
@@ -221,6 +221,13 @@
       "userId": 1,
       "trickId": 3,
       "isComplete": false
+    }
+  ],
+  "friends": [
+    {
+      "currentUserId": 1,
+      "userId": 2,
+      "id": 1
     }
   ]
 }

@@ -42,3 +42,28 @@ export const updateList = (trickObj) => {
     })
     .then(response => response.json())
 }
+
+export const getUserFriends = (id) => {
+    return fetch (`http://localhost:8088/friends?currentUserId=${id}&_expand=user`)
+    .then(response => response.json())
+}
+export const addFriend = (friendObj) => {
+    return fetch(`http://localhost:8088/friends`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(friendObj)
+    })
+    .then(response => response.json())
+}
+export const deleteFriend = (friendId) => {
+    return fetch(`http://localhost:8088/friends/${friendId}`, {
+        method: "DELETE"
+    })
+    .then(response => response.json())
+}
+export const getAllUsers = () => {
+    return fetch(`http://localhost:8088/users`)
+    .then(response => response.json())
+}

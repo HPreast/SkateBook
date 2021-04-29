@@ -61,7 +61,7 @@ export const EntryForm = () => {
                 <fieldset>
                 <div className="formGroup">
                         <label htmlFor="entry" className="label">Entry: </label>
-                        <input type="text"
+                        <input type="textArea"
                             id="entry"
                             className="form-control"
                             required

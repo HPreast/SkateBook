@@ -13,15 +13,6 @@
     grid-row: 1/3;
     background: #799C9C;
 }
-.friendList {
-    grid-column: 1/2;
-    grid-row: 3/6;
-    background: #799C9C;
-}
-.friendList button {
-    background: #EBFBFA;
-    color: black;
-}
 .entryList {
     grid-column: 3/10;
     grid-row: 2/5;

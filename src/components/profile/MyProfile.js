@@ -118,7 +118,7 @@ export const MyProfile = () => {
                 </button>
                 </div>
                 <div className="entryList">
-                    <h2>My Progress</h2>
+                    <h2>My Progress</h2><hr></hr>
                     {entries.map(entry =>
                         <EntryCard
                             key={entry.id}
@@ -127,7 +127,7 @@ export const MyProfile = () => {
                         />)}
                 </div>
                 <div className="practiceCards">
-                <h2>My Practice</h2>
+                <h2>My Practice</h2><hr></hr>
                 {tricks.map(trick =>
                     <PracticeCard
                         key={trick.id}
@@ -137,7 +137,7 @@ export const MyProfile = () => {
                 )}
             </div>
             <div className="libraryCards">
-                <h2>My Library</h2>
+                <h2>My Library</h2><hr></hr>
                 {library.map(trick =>
                 <LibraryCard
                     key={trick.id}

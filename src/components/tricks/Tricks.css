@@ -1,6 +1,10 @@
 /* .trickList {
     display: inline-grid;
 } */
+.listHeader {
+    color: #11979A;
+    font-size: 28px;
+}
 .listContainer {
     display: flex;
     justify-content: space-between;
@@ -33,6 +37,7 @@
 }
 h2 {
     text-align: center;
+    color: #EBFBFA;
 }
 #practiceBtn {
     position:absolute;

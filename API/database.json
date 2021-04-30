@@ -234,10 +234,58 @@
       "isComplete": true
     },
     {
+      "id": 5,
       "userId": 1,
       "trickId": 3,
+      "isComplete": false
+    },
+    {
+      "userId": 2,
+      "trickId": 3,
+      "isComplete": true,
+      "id": 6
+    },
+    {
+      "id": 7,
+      "userId": 2,
+      "trickId": 10,
+      "isComplete": false
+    },
+    {
+      "userId": 2,
+      "trickId": 6,
+      "isComplete": true,
+      "id": 8
+    },
+    {
+      "userId": 2,
+      "trickId": 1,
+      "isComplete": true,
+      "id": 9
+    },
+    {
+      "userId": 2,
+      "trickId": 9,
       "isComplete": false,
-      "id": 5
+      "id": 10
+    },
+    {
+      "userId": 2,
+      "trickId": 8,
+      "isComplete": true,
+      "id": 11
+    },
+    {
+      "userId": 2,
+      "trickId": 5,
+      "isComplete": true,
+      "id": 12
+    },
+    {
+      "userId": 2,
+      "trickId": 2,
+      "isComplete": true,
+      "id": 13
     }
   ],
   "friends": [

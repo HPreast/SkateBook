@@ -197,10 +197,27 @@
   "entries": [
     {
       "userId": 1,
-      "date": "2021-04-28",
+      "timestamp": 1619794989259,
+      "date": "2021-04-30",
+      "mood": "Confident",
+      "entry": "Testing",
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "timestamp": 1619795058329,
+      "date": "2021-04-30",
       "mood": "Confident",
       "entry": "Landed my first pop shuvit today!",
-      "id": 1
+      "id": 6
+    },
+    {
+      "userId": 2,
+      "timestamp": 1619795110247,
+      "date": "2021-04-30",
+      "mood": "Confident",
+      "entry": "Testing 2",
+      "id": 7
     }
   ],
   "practice": [
@@ -217,10 +234,10 @@
       "isComplete": true
     },
     {
-      "id": 4,
       "userId": 1,
       "trickId": 3,
-      "isComplete": false
+      "isComplete": false,
+      "id": 5
     }
   ],
   "friends": [
@@ -228,6 +245,11 @@
       "currentUserId": 1,
       "userId": 2,
       "id": 1
+    },
+    {
+      "currentUserId": 2,
+      "userId": 1,
+      "id": 2
     }
   ]
 }

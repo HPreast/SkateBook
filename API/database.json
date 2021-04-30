@@ -197,17 +197,27 @@
   "entries": [
     {
       "userId": 1,
-      "date": "2021-04-28",
+      "timestamp": 1619794989259,
+      "date": "2021-04-30",
       "mood": "Confident",
-      "entry": "Landed my first pop shuvit today!",
-      "id": 1
+      "entry": "Testing",
+      "id": 5
     },
     {
-      "id": 2,
       "userId": 1,
-      "date": "2021-04-29",
+      "timestamp": 1619795058329,
+      "date": "2021-04-30",
       "mood": "Confident",
-      "entry": "Testing 2"
+      "entry": "Landed my first pop shuvit today!",
+      "id": 6
+    },
+    {
+      "userId": 2,
+      "timestamp": 1619795110247,
+      "date": "2021-04-30",
+      "mood": "Confident",
+      "entry": "Testing 2",
+      "id": 7
     }
   ],
   "practice": [
@@ -235,6 +245,11 @@
       "currentUserId": 1,
       "userId": 2,
       "id": 1
+    },
+    {
+      "currentUserId": 2,
+      "userId": 1,
+      "id": 2
     }
   ]
 }

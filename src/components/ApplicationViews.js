@@ -6,10 +6,14 @@ import { TrickDetails } from "./tricks/TrickDetails"
 import { EntryForm } from "../components/entries/entryForm"
 import { EditEntry } from "../components/entries/entryEditForm"
 import { FriendSearch } from "./friends/friendSearch"
+import { HomePage } from "./home/home"
 
 export const ApplicationViews =() => {
     return (
     <>    
+        <Route exact path="/">
+            <HomePage />
+        </Route>
         <Route exact path="/trickList">
             <TrickList />
         </Route>

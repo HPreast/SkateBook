@@ -9,6 +9,7 @@ export const EntryForm = () => {
     const loggedInUser = JSON.parse(sessionStorage.getItem("headspace_user"))
     const [entry, setEntry] = useState({
         userId: loggedInUser,
+        timestamp: Date.now(),
         date: Date.now(),
         mood: "",
         entry: ""

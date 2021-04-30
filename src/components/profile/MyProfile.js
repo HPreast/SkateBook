@@ -89,19 +89,24 @@ export const MyProfile = () => {
             .then(() => libraryTricks())
     }
 
+    
     useEffect(() => {
         currentUserEntries()
     }, [])
     useEffect(() => {
         currentUser()
     }, [loggedInUser])
-
+    
     useEffect(() => {
         trackedTricks()
     }, [])
     useEffect(() => {
         libraryTricks()
     }, [])
+    function biggestToSmallest(a, b) {
+        return b.timestamp - a.timestamp;
+    }
+    entries.sort(biggestToSmallest);
     return (
         <>
             <section className="profileContainer">

@@ -7,6 +7,7 @@ import { EntryForm } from "../components/entries/entryForm"
 import { EditEntry } from "../components/entries/entryEditForm"
 import { FriendSearch } from "./friends/friendSearch"
 import { HomePage } from "./home/home"
+import { EditHomeEntry } from "./home/editHomeEntry"
 
 export const ApplicationViews =() => {
     return (
@@ -28,6 +29,9 @@ export const ApplicationViews =() => {
         </Route>
         <Route path="/entries/:entryId(\d+)/edit">
             <EditEntry />
+        </Route>
+        <Route path="/entries/:entryId(\d+)/editHome">
+            <EditHomeEntry />
         </Route>
         <Route path="/friends/search">
             <FriendSearch />

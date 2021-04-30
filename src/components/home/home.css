@@ -1,0 +1,77 @@
+/* styling for home page */
+
+.homePage {
+    display: inline-grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    grid-template-rows: repeat(5, .5fr);
+    height: 100vh;
+    width: 100vw;
+}
+.welcome {
+    display: flex;
+    grid-column: 5/9;
+    text-align: center;
+    margin-top: .5em;
+    font-size: 38px;
+    
+}
+h1 {
+margin: 0;
+}
+.practiceCardsHome {
+    grid-column: 11/13;
+    grid-row: 2/4;
+    background: #799C9C;
+}
+.overflow {
+    max-height:75%;
+    overflow:auto;
+    width:100%;
+}
+.libraryCardsHome {
+    grid-column: 1/3;
+    grid-row: 2/4;
+    background: #799C9C;
+}
+.entries {
+    grid-column: 4/10;
+    grid-row: 2/5;
+    background: #799C9C;
+    margin: 0;
+}
+.entriesFeed {
+    max-height:85%;
+    overflow:auto;
+    width:100%;
+}
+.entryFeed {
+    background: #EBFBFA;
+    margin: 1em;
+    text-align: justify;
+    height: auto;
+    border: 3px solid #C0EDE9;
+}
+.friendEntryFeed {
+    background: #C0EDE9;
+    margin: 1em;
+    text-align: justify;
+    height: auto;
+    border: 3px solid #EBFBFA;
+}
+/* .libraryCard {
+    background: #EBFBFA;
+    margin: 1em;
+    text-align: center;
+    height: auto;
+}
+.libraryCard button {
+    display: inline;
+    align-items:flex-end;
+}
+.practiceCard {
+    background: #EBFBFA;
+    margin: 1em;
+    text-align: center;
+    height: auto;
+} */

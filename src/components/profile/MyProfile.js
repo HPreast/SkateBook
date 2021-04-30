@@ -111,8 +111,11 @@ export const MyProfile = () => {
         <>
             <section className="profileContainer">
                 <div className="profileInfo">
-                    <img id="profilePhoto"src={require(`../images/${users.photo? users.photo : "DefaultUserSkateBook.jpg"}`).default} alt="default profile picture" />
+                    <div className="photo">
+                        <img id="profilePhoto"src={require(`../images/${users.photo? users.photo : "DefaultUserSkateBook.jpg"}`).default} alt="default profile picture" />
+                    </div>
                     <div>
+                    <p className="bio"><strong>Name: </strong>{users.name}</p>
                     <p className="bio"><strong>Bio: </strong>{users.bio}</p>
                     </div>
                 </div>
@@ -133,6 +136,7 @@ export const MyProfile = () => {
                 </div>
                 <div className="practiceCards">
                 <h2>My Practice</h2><hr></hr>
+                <div className="overflow">
                 {tricks.map(trick =>
                     <PracticeCard
                         key={trick.id}
@@ -140,9 +144,11 @@ export const MyProfile = () => {
                         handleDelete={handleDelete}
                         handleUpdate={handleUpdate} />
                 )}
+                </div>
             </div>
             <div className="libraryCards">
                 <h2>My Library</h2><hr></hr>
+                <div className="overflow">
                 {library.map(trick =>
                 <LibraryCard
                     key={trick.id}
@@ -150,8 +156,12 @@ export const MyProfile = () => {
                     handleDelete={handleDelete}
                     handleRecall={handleRecall} />)}
             </div>
+            </div>
             <div className="friendList">
+                <div className="overflow">
                 <FriendsList />
+                </div>
+                <button type="button" id="addFriend" className="btn btn-primary" onClick={() => history.push("/friends/search")}>Add a Friend</button>
             </div>
             </section>
         </>

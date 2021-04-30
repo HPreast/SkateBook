@@ -29,7 +29,7 @@ export const FriendsList = () => {
     }, [])
     return (
         <section className="friendsList">
-            <h2>My Friends</h2><hr></hr>
+            <h2>My Friends<hr></hr></h2>
             <div className="friendCards">
                 {friends.map(friend =>
                     <FriendCard 
@@ -38,7 +38,7 @@ export const FriendsList = () => {
                     handleDelete={handleDelete}
                     />)}
             </div>
-            <button type="button" id="addFriend" className="btn btn-primary" onClick={() => history.push("/friends/search")}>Add a Friend</button>
+            {/* <button type="button" id="addFriend" className="btn btn-primary" onClick={() => history.push("/friends/search")}>Add a Friend</button> */}
         </section>
     )
 }

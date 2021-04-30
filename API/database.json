@@ -196,20 +196,20 @@
   ],
   "entries": [
     {
+      "id": 5,
       "userId": 1,
-      "timestamp": 1619794989259,
       "date": "2021-04-30",
       "mood": "Confident",
-      "entry": "Testing",
-      "id": 5
+      "entry": "Testing  3",
+      "timestamp": 1619797506442
     },
     {
+      "id": 6,
       "userId": 1,
-      "timestamp": 1619795058329,
       "date": "2021-04-30",
       "mood": "Confident",
-      "entry": "Landed my first pop shuvit today!",
-      "id": 6
+      "entry": "Landed my first pop shuvit today!!!!!!!",
+      "timestamp": 1619797418985
     },
     {
       "userId": 2,
@@ -286,6 +286,18 @@
       "trickId": 2,
       "isComplete": true,
       "id": 13
+    },
+    {
+      "id": 14,
+      "userId": 1,
+      "trickId": 7,
+      "isComplete": false
+    },
+    {
+      "id": 15,
+      "userId": 1,
+      "trickId": 9,
+      "isComplete": false
     }
   ],
   "friends": [

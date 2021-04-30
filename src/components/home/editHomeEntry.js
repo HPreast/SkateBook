@@ -1,9 +1,8 @@
-//Allow the user to modify a past journal entry
 import React, { useEffect, useState } from "react"
 import { useHistory, useParams } from "react-router"
 import { editEntry, getEntryById } from "../../modules/EntryManager"
 
-export const EditEntry = () => {
+export const EditHomeEntry = () => {
     const [entry, setEntry] = useState({})
     const [isLoading, setIsLoading] = useState(false)
 
@@ -30,7 +29,7 @@ export const EditEntry = () => {
             timestamp: Date.now()
         }
         editEntry(editedEntry)
-        .then(() => history.push("/myProfile"))
+        .then(() => history.push("/"))
     }
     useEffect(() => {
         getEntryById(entryId)

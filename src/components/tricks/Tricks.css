@@ -1,3 +1,6 @@
+/* .trickList {
+    display: inline-grid;
+} */
 .listContainer {
     display: flex;
     justify-content: space-between;
@@ -26,6 +29,7 @@
   margin-right: auto;
   width: 60%;
   height: 590px;
+  /* grid-column: 2/5; */
 }
 h2 {
     text-align: center;

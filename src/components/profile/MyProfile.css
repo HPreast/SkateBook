@@ -2,35 +2,51 @@
     display: inline-grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
-    grid-template-rows: repeat(5, .5fr);
+    grid-template-rows: repeat(6, .5fr);
+    height: 100vh;
+    width: 100vw
 }
-#profilePhoto {
+.photo > img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+/* #profilePhoto {
     height: 200px;
     width: 200px;
-}
-.profileInfo {
-    grid-column: 1 / 2;
+    grid-column: 1/3;
     grid-row: 1/3;
+} */
+.profileInfo {
+    grid-column: 1 / 3;
+    grid-row: 1/4;
     background: #799C9C;
 }
 .entryList {
-    grid-column: 3/10;
-    grid-row: 2/5;
+    grid-column: 4/10;
+    grid-row: 2/6;
     background: #799C9C;
 }
 .practiceCards {
     grid-column: 11/13;
-    grid-row: 1/3;
+    grid-row: 1/4;
     background: #799C9C;
 }
 .libraryCards {
     grid-column: 11/13;
-    grid-row: 3/6;
+    grid-row: 4/7;
     background: #799C9C;
 }
+.overflow {
+    max-height:75%;
+    overflow:auto;
+    width:100%;
+}
 .addEntry {
-    grid-column: 6;
+    grid-column: 6/8;
     text-align: center;
+    font-size: 40px;
+    margin-top: 1em;
 }
 .btn {
     background: #799C9C;

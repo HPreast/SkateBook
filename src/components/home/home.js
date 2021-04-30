@@ -5,6 +5,7 @@ import { PracticeCard } from "../profile/PracticeCards"
 import { LibraryCard } from "../profile/LibraryCards"
 import { EntryFeed } from "./entryFeed";
 import { deleteEntry } from "../../modules/EntryManager";
+import "../home/home.css"
 
 export const HomePage = () => {
     const [entries, setEntries] = useState([]);
@@ -108,9 +109,14 @@ export const HomePage = () => {
     }, [])
 
     return (
+    <>
         <section className="homePage">
+            <div className="welcome">
+                <h1>Welcome to SkateBook!</h1>
+            </div>
             <div className="entries">
-                <div className="entryFeed">
+                <h2>My Feed</h2><hr></hr>
+                <div className="entriesFeed">
                 {entries.map(entry =>
                         <EntryFeed
                             key={entry.id}
@@ -119,25 +125,30 @@ export const HomePage = () => {
                         />)}
                 </div>
             </div>
-            <div className="practiceCards">
+            <div className="practiceCardsHome">
                 <h2>My Practice</h2><hr></hr>
-                {tricks.map(trick =>
+                <div className="overflow">
+                    {tricks.map(trick =>
                     <PracticeCard
                         key={trick.id}
                         trick={trick}
                         handleDelete={handleDelete}
                         handleUpdate={handleUpdate} />
                 )}
+                </div>
             </div>
-            <div className="libraryCards">
+            <div className="libraryCardsHome">
                 <h2>My Library</h2><hr></hr>
+                <div className="overflow">
                 {library.map(trick =>
                 <LibraryCard
                     key={trick.id}
                     trick={trick}
                     handleDelete={handleDelete}
                     handleRecall={handleRecall} />)}
+                </div>
             </div>
         </section>
+    </>
     )
 }

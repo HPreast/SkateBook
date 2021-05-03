@@ -13,6 +13,20 @@
       "id": 2,
       "photo": "",
       "bio": "Sponsored skater trying to get more organized."
+    },
+    {
+      "email": "ethan@email.com",
+      "name": "Ethan Mathis",
+      "id": 3,
+      "photo": "",
+      "bio": ""
+    },
+    {
+      "email": "kwalks@email.com",
+      "name": "Kyle Walker",
+      "id": 4,
+      "photo": "",
+      "bio": ""
     }
   ],
   "tricks": [
@@ -310,6 +324,21 @@
       "currentUserId": 2,
       "userId": 1,
       "id": 2
+    },
+    {
+      "currentUserId": 2,
+      "userId": 3,
+      "id": 3
+    },
+    {
+      "currentUserId": 1,
+      "userId": 4,
+      "id": 4
+    },
+    {
+      "currentUserId": 1,
+      "userId": 3,
+      "id": 5
     }
   ]
 }

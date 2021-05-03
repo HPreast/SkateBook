@@ -7,16 +7,29 @@ export const FriendSearch = () => {
     const [search, setSearch] = useState("")
     const [result, setResult] = useState([])
     const [friends, setFriends] = useState([])
+    const [allUsers, setAllUsers] = useState([])
+    const [friendsObj, setFriendsObj] = useState([])
+    const [allUsersNotFriends, setAllUsersNotFriends] = useState([])
 
     const loggedInUser = JSON.parse(sessionStorage.getItem("headspace_user"))
 
     const userFriends = () => {
         return getUserFriends(loggedInUser)
             .then(friendsFromDB => {
+                // console.log(friendsFromDB)
+                let friendsUserObj = friendsFromDB.map(friend => friend.user)
+                setFriendsObj(friendsUserObj)
                 setFriends(friendsFromDB)
             })
     }
-
+    
+    const getAllTheUsers = () => {
+        getAllUsers()
+        .then(response => setAllUsers(response))
+    }
+    const clearSearch = () => {
+        setResult("")
+    }
     const handleAddFriend = (id) => {
         const newFriend = {
             currentUserId: loggedInUser,
@@ -24,6 +37,7 @@ export const FriendSearch = () => {
         }
         addFriend(newFriend)
             .then(() => userFriends())
+            clearSearch()
     }
 
     const handleInputChange = (event) => {
@@ -35,22 +49,45 @@ export const FriendSearch = () => {
 
     const results = (searchString) => {
         if (searchString.length > 0) {
-            getAllUsers()
-                .then(response => {
-                    let matchingUsers = response.filter(user => {
+            
+               
+                    let matchingUsers = allUsersNotFriends.filter(user => {
                         if (user.name.toLowerCase().includes(searchString) && user.id !== loggedInUser) {
                             return true
                         }
                     })
+                    console.log("matchingUsers", matchingUsers)
                     setResult(matchingUsers)
-                })
+                
         }
         else setResult([])
     }
 
+    const notFriends = () => {
+        let notMyFriends = [...allUsers];
+        for(var i = 0, len = friendsObj.length; i < len; i++) {
+            for(var j = 0, len2 = notMyFriends.length; j < len2; j++) {
+                if (friendsObj[i].id === notMyFriends[j].id) {
+                    notMyFriends.splice(j, 1);
+                    len2 = notMyFriends.length
+                }
+                
+            }
+        }
+        console.log("notMyFriends", notMyFriends)
+        setAllUsersNotFriends(notMyFriends)
+        // console.log("searchRes", searchRes)
+    }
     useEffect(() => {
         results(search)
+        userFriends()
+        getAllTheUsers()
+        notFriends()
     }, [search])
+
+    // useEffect(() => {
+       
+    // }, [])
     return (
         <section className="friendSearch">
             <div className="header">

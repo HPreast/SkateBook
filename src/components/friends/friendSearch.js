@@ -74,7 +74,7 @@ export const FriendSearch = () => {
                 
             }
         }
-        console.log("notMyFriends", notMyFriends)
+        // console.log("notMyFriends", notMyFriends)
         setAllUsersNotFriends(notMyFriends)
         // console.log("searchRes", searchRes)
     }

@@ -5,20 +5,51 @@ import { getTricks } from "../../modules/TrickManager";
 import { TrickCard } from "./TrickCard";
 import trickList from "../images/trickList.jpg"
 import "./Tricks.css"
+import { getUserPracticeTricks } from "../../modules/UserManager"
 
 export const TrickList = () => {
-    const [tricks, setTricks] = useState([]);
+    const [tricks, setTricks] = useState([]); 
+    const [trickRelations, setTrickRelations] = useState([])
+    const [allTricks, setAllTricks] = useState([])
 
-    const displayTricks = () => {
-        return getTricks()
-        .then(items => {
-            let trickDisplay = items
-            setTricks(trickDisplay)
-        })
+    const loggedInUser = JSON.parse(sessionStorage.getItem("headspace_user"))
+
+    
+    const getAllTricks = () => {
+        getTricks()
+        .then(response => setAllTricks(response))
     }
+
+    const trickRelationship = () => {
+        getUserPracticeTricks(loggedInUser)
+        .then(response => {
+            let trickRelationsObj = response.map(userRes => userRes.trickId)
+            setTrickRelations(trickRelationsObj)
+        })
+            
+    }
+
+    const notTricks = () => {
+            let notMyTricks = [...allTricks];
+            for(var i = 0, len = trickRelations.length; i < len; i++) {
+                for(var j = 0, len2 = notMyTricks.length; j < len2; j++) {
+                    if (trickRelations[i] === notMyTricks[j].id) {
+                        notMyTricks.splice(j, 1);
+                        len2 = notMyTricks.length
+                    }
+                }
+            }
+            setTricks(notMyTricks)
+    }
+    
     useEffect(() => {
-        displayTricks()
+        getAllTricks()
+        trickRelationship()
+        
     }, [])
+    useEffect(() => {
+        notTricks()
+    }, [trickRelations])
     
     
     return (

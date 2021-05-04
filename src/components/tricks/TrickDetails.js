@@ -7,6 +7,7 @@ import { YoutubeEmbed } from "./YoutubeEmbed";
 
 export const TrickDetails = () => {
     const [tricks, setTricks] = useState([]);
+
     const {trickId} = useParams();
 
     const loggedInUser = JSON.parse(sessionStorage.getItem("headspace_user"))
@@ -42,11 +43,12 @@ export const TrickDetails = () => {
         .then(() => displayDetails())
         }
     }
-    
+
     useEffect(() => {
-        displayDetails(trickId)
+        displayDetails(trickId) 
     }, [trickId])
-    return (
+
+    return (        
         <section className="detailContainer">
             <button type="button" className="btn btn-primary" id="practiceBtn"onClick={() => handleAddToPractice(tricks.id)}>Add to Practice</button>
             <button type="button" className="btn btn-primary" id="libraryBtn"onClick={() => handleAddToLibrary(tricks.id)}>Add to Library</button>
@@ -62,5 +64,6 @@ export const TrickDetails = () => {
                 <YoutubeEmbed embedId={tricks.yt}/>
             </div>
         </section>
+   
     )
 }

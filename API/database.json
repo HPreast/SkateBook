@@ -27,6 +27,20 @@
       "id": 4,
       "photo": "",
       "bio": ""
+    },
+    {
+      "email": "chris@email.com",
+      "name": "Chris Cole",
+      "id": 5,
+      "photo": "",
+      "bio": ""
+    },
+    {
+      "email": "chris@email.com",
+      "name": "Ishod Ware",
+      "id": 6,
+      "photo": "",
+      "bio": ""
     }
   ],
   "tricks": [
@@ -248,12 +262,6 @@
       "isComplete": true
     },
     {
-      "id": 5,
-      "userId": 1,
-      "trickId": 3,
-      "isComplete": false
-    },
-    {
       "userId": 2,
       "trickId": 3,
       "isComplete": true,
@@ -279,12 +287,6 @@
     },
     {
       "userId": 2,
-      "trickId": 9,
-      "isComplete": false,
-      "id": 10
-    },
-    {
-      "userId": 2,
       "trickId": 8,
       "isComplete": true,
       "id": 11
@@ -302,16 +304,16 @@
       "id": 13
     },
     {
-      "id": 14,
       "userId": 1,
-      "trickId": 7,
-      "isComplete": false
+      "trickId": 5,
+      "isComplete": false,
+      "id": 14
     },
     {
-      "id": 15,
-      "userId": 1,
-      "trickId": 9,
-      "isComplete": false
+      "userId": 2,
+      "trickId": 4,
+      "isComplete": false,
+      "id": 15
     }
   ],
   "friends": [
@@ -334,11 +336,6 @@
       "currentUserId": 1,
       "userId": 4,
       "id": 4
-    },
-    {
-      "currentUserId": 1,
-      "userId": 3,
-      "id": 5
     }
   ]
 }

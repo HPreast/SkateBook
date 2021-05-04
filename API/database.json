@@ -287,12 +287,6 @@
     },
     {
       "userId": 2,
-      "trickId": 9,
-      "isComplete": false,
-      "id": 10
-    },
-    {
-      "userId": 2,
       "trickId": 8,
       "isComplete": true,
       "id": 11
@@ -314,6 +308,12 @@
       "trickId": 5,
       "isComplete": false,
       "id": 14
+    },
+    {
+      "userId": 2,
+      "trickId": 4,
+      "isComplete": false,
+      "id": 15
     }
   ],
   "friends": [

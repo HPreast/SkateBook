@@ -44,3 +44,8 @@ export const deleteEntry = (id) => {
     })
     .then(response => response.json())
 }
+
+export const entryComments = (id) => {
+    return fetch(`http://localhost:8088/comments?entryId=${id}`)
+    .then(response => response.json())
+}

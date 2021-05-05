@@ -12,7 +12,8 @@ export const EntryForm = () => {
         timestamp: Date.now(),
         date: Date.now(),
         mood: "",
-        entry: ""
+        entry: "",
+        likes: 0
     })
     const history = useHistory();
 

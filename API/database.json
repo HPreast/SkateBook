@@ -228,10 +228,10 @@
       "difficulty": 1,
       "description": "Several small kickturns back and forth. Pushing forward with each kick will give you speed.",
       "tips": [
-      "Get rolling.",
-      "Do a few small kickturns back and forth.",
-      "When you do the turn push extra hard off the ground. Do these like you are paddling in a canoe.",
-      "Paddle each side and then drop the wheels down before you turn too much."
+        "Get rolling.",
+        "Do a few small kickturns back and forth.",
+        "When you do the turn push extra hard off the ground. Do these like you are paddling in a canoe.",
+        "Paddle each side and then drop the wheels down before you turn too much."
       ],
       "gif": "https://thumbs.gfycat.com/CostlyQueasyIrishwolfhound-size_restricted.gif",
       "yt": "VUzDQKBwmRg"
@@ -246,7 +246,7 @@
         "Backside flips are not tough to learn if you can do the three set up tricks. It is really just timing the body rotation, pop and flip together.",
         "You must be rolling to try this trick. As you should be with any trick. When you land you might not get the full 180° rotation with the board and your body. Just slide out the wheels the rest of the way.",
         "Getting better you will be able to land on the front trucks and pivot out the rest of the way.",
-        "As you practice this trick it will get easier and easier to pull around. That is when you will develop your style of doing it.",        
+        "As you practice this trick it will get easier and easier to pull around. That is when you will develop your style of doing it.",
         "If the board starts to get away behind you when it flips. To stay over top of the board. Try leaning backwards into the trick a little more, pop straight up and higher. This will help keep it under your body through the trick."
       ],
       "gif": "https://thumbs.gfycat.com/AgonizingHighFirebelliedtoad-size_restricted.gif",
@@ -579,7 +579,8 @@
       "date": "2021-04-30",
       "mood": "Confident",
       "entry": "Testing  3",
-      "timestamp": 1619797506442
+      "timestamp": 1619797506442,
+      "likes": 0
     },
     {
       "id": 6,
@@ -587,15 +588,24 @@
       "date": "2021-04-30",
       "mood": "Confident",
       "entry": "Landed my first pop shuvit today!!!!!!!",
-      "timestamp": 1619797418985
+      "timestamp": 1619797418985,
+      "likes": 0
     },
     {
+      "id": 7,
       "userId": 2,
-      "timestamp": 1619795110247,
       "date": "2021-04-30",
       "mood": "Confident",
       "entry": "Testing 2",
-      "id": 7
+      "likes": 4
+    },
+    {
+      "id": 8,
+      "userId": 2,
+      "date": "2021-04-30",
+      "mood": "Confident",
+      "entry": "Testing 2",
+      "likes": 4
     }
   ],
   "practice": [

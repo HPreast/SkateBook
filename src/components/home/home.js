@@ -1,18 +1,23 @@
 import React, { useState, useEffect } from "react"
-import { useHistory } from "react-router";
+import { useHistory, useParams } from "react-router";
 import { getUserEntries, getUserFriends, getUserPracticeTricks, deletePractice, updateList } from "../../modules/UserManager";
 import { PracticeCard } from "../profile/PracticeCards"
 import { LibraryCard } from "../profile/LibraryCards"
 import { EntryFeed } from "./entryFeed";
-import { deleteEntry } from "../../modules/EntryManager";
+import { deleteEntry, likeEntry } from "../../modules/EntryManager";
 import "../home/home.css"
 
 export const HomePage = () => {
     const [entries, setEntries] = useState([]);
     const [tricks, setTricks] = useState([])
     const [library, setLibrary] = useState([])
+    const [clicked, setClicked] = useState(true)
+    // const [likes, setLikes] = useState({
+    //     count: 0
+    // })
 
     const history = useHistory();
+    const {entryId} = useParams();
 
     const loggedInUser = JSON.parse(sessionStorage.getItem("headspace_user"))
 
@@ -98,6 +103,36 @@ export const HomePage = () => {
         .then(() => getEntries())
     }
 
+    const handleLike = (entry) => {
+        let likeCount = {...entry}
+        if(clicked === true) {
+
+            const likedPost = {
+                id: likeCount.id,
+                userId: likeCount.userId,
+                date: likeCount.date,
+                mood: likeCount.mood,
+                entry: likeCount.entry,
+                likes: likeCount.likes + 1
+            }
+            likeEntry(likedPost)
+            .then(() => getEntries())
+            setClicked(false)
+        } else {
+            const likedPost = {
+                id: likeCount.id,
+                userId: likeCount.userId,
+                date: likeCount.date,
+                mood: likeCount.mood,
+                entry: likeCount.entry,
+                likes: likeCount.likes - 1
+            }
+            likeEntry(likedPost)
+            .then(() => getEntries())
+            setClicked(true)
+        }
+    }
+
     useEffect(() => {
         getEntries()
     }, [])
@@ -122,6 +157,7 @@ export const HomePage = () => {
                             key={entry.id}
                             entry={entry}
                             handleDeleteEntry={handleDeleteEntry}
+                            handleLike={handleLike}
                         />)}
                 </div>
             </div>

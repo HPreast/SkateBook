@@ -75,3 +75,19 @@ margin: 0;
     text-align: center;
     height: auto;
 } */
+
+.userComments {
+    /* display: flex; */
+    list-style-type: none;
+    background:#C0EDE9;
+    margin: 0;
+    border: 3px solid #EBFBFA;
+    /* justify-content: flex-start; */
+    
+}
+.friendComments {
+    list-style-type: none;
+    background:#EBFBFA;
+    margin: 0;
+    border: 3px solid #C0EDE9;
+}

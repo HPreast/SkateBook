@@ -12,6 +12,7 @@ export const HomePage = () => {
     const [tricks, setTricks] = useState([])
     const [library, setLibrary] = useState([])
     const [clicked, setClicked] = useState(true)
+    
     // const [likes, setLikes] = useState({
     //     count: 0
     // })
@@ -93,27 +94,25 @@ export const HomePage = () => {
             .then(() => libraryTricks())
     }
 
-    function biggestToSmallest(a, b) {
-        return b.timestamp - a.timestamp;
-    }
-    entries.sort(biggestToSmallest);
-
+    
     const handleDeleteEntry = (id) => {
         deleteEntry(id)
         .then(() => getEntries())
     }
-
+    
     const handleLike = (entry) => {
         let likeCount = {...entry}
+        console.log(likeCount)
         if(clicked === true) {
-
+            
             const likedPost = {
                 id: likeCount.id,
                 userId: likeCount.userId,
                 date: likeCount.date,
                 mood: likeCount.mood,
                 entry: likeCount.entry,
-                likes: likeCount.likes + 1
+                likes: likeCount.likes + 1,
+                timestamp: likeCount.timestamp
             }
             likeEntry(likedPost)
             .then(() => getEntries())
@@ -125,13 +124,21 @@ export const HomePage = () => {
                 date: likeCount.date,
                 mood: likeCount.mood,
                 entry: likeCount.entry,
-                likes: likeCount.likes - 1
+                likes: likeCount.likes - 1,
+                timestamp: likeCount.timestamp
             }
             likeEntry(likedPost)
             .then(() => getEntries())
             setClicked(true)
         }
     }
+
+    
+
+    function biggestToSmallest(a, b) {
+        return b.timestamp - a.timestamp;
+    }
+    entries.sort(biggestToSmallest);
 
     useEffect(() => {
         getEntries()

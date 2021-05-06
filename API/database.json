@@ -579,8 +579,8 @@
       "date": "2021-04-30",
       "mood": "Confident",
       "entry": "Testing  3",
-      "timestamp": 1619797506442,
-      "likes": 0
+      "likes": 0,
+      "timestamp": 1619797506442
     },
     {
       "id": 6,
@@ -588,24 +588,43 @@
       "date": "2021-04-30",
       "mood": "Confident",
       "entry": "Landed my first pop shuvit today!!!!!!!",
-      "timestamp": 1619797418985,
-      "likes": 0
+      "likes": 1,
+      "timestamp": 1619797418985
     },
     {
       "id": 7,
       "userId": 2,
       "date": "2021-04-30",
       "mood": "Confident",
-      "entry": "Testing 2",
-      "likes": 4
+      "entry": "Testing 3",
+      "likes": 1,
+      "timestamp": 1620241610285
     },
     {
-      "id": 8,
-      "userId": 2,
-      "date": "2021-04-30",
+      "id": 9,
+      "userId": 1,
+      "date": "2021-05-05",
       "mood": "Confident",
-      "entry": "Testing 2",
-      "likes": 4
+      "entry": "Testing",
+      "likes": 1,
+      "timestamp": 1620240587240
+    },
+    {
+      "id": 11,
+      "userId": 1,
+      "date": "2021-05-05",
+      "mood": "Nervous",
+      "entry": "Testing 6",
+      "timestamp": 1620242130589
+    },
+    {
+      "id": 12,
+      "userId": 2,
+      "date": "2021-05-05",
+      "mood": "Confident",
+      "entry": "Testing",
+      "likes": 2,
+      "timestamp": 1620241657884
     }
   ],
   "practice": [
@@ -696,6 +715,26 @@
       "currentUserId": 1,
       "userId": 4,
       "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "entryId": 11,
+      "userId": 3,
+      "comment": "Don't be nervous my dude, you got it!"
+    },
+    {
+      "id": 2,
+      "entryId": 12,
+      "userId": 3,
+      "comment": "Nice Test!"
+    },
+    {
+      "id": 3,
+      "entryId": 12,
+      "userId": 1,
+      "comment": "Well done!"
     }
   ]
 }

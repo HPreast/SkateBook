@@ -60,3 +60,10 @@ export const addComment = (commentObj) => {
     })
     .then(response => response.json())
 }
+
+export const deleteComment = (id) => {
+    return fetch(`http://localhost:8088/comments/${id}`, {
+        method: "DELETE"
+    })
+    .then(response => response.json())
+}

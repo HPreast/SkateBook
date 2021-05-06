@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { useHistory } from "react-router";
-import { entryComments, addComment } from "../../modules/EntryManager"
+import { entryComments, addComment, deleteComment } from "../../modules/EntryManager"
 // import { CommentList } from "../home/commentList"
 
 export const EntryFeed = ({ entry, handleDeleteEntry, handleLike }) => {
@@ -24,7 +24,7 @@ export const EntryFeed = ({ entry, handleDeleteEntry, handleLike }) => {
         let commentArr = [];
         entryComments(entry.id)
             .then(response => {
-                console.log(response)
+                // console.log(response)
                 commentArr = response.map((obj) => obj)
                 // console.log(commentArr)
                 setComments(commentArr)
@@ -33,26 +33,26 @@ export const EntryFeed = ({ entry, handleDeleteEntry, handleLike }) => {
     }
     // console.log(comments)
 
-    const renderCommentList = () => {
-        if (isVisible === true) {
-            return (
-                <>
-                    <button type="button" className="btn btn-primary" onClick={() => setIsVisible(false)}>Hide Comments</button>
-                    <ul className="userComments">
-                        {comments?.map(comment =>
-                            <li>{comment.user.name}: {comment.comment}</li>
-                        )}
-                    </ul>
-                </>
-            )
+    // const renderCommentList = () => {
+    //     if (isVisible === true) {
+    //         return (
+    //             <>
+    //                 <button type="button" className="btn btn-primary" onClick={() => setIsVisible(false)}>Hide Comments</button>
+    //                 <ul className="userComments">
+    //                     {comments?.map(comment =>
+    //                         <li>{comment.user.name}: {comment.comment}</li>
+    //                     )}
+    //                 </ul>
+    //             </>
+    //         )
 
 
-        } else {
-            <div></div>
-        }
+    //     } else {
+    //         <div></div>
+    //     }
 
 
-    }
+    // }
 
     const renderFriendCommentList = () => {
         if (isVisible === true) {
@@ -62,7 +62,19 @@ export const EntryFeed = ({ entry, handleDeleteEntry, handleLike }) => {
                     {/* <button type="button" className="btn btn-primary" onClick={() => setClicked(true)}>Leave a Comment</button> */}
                     <ul className="friendComments">
                         {comments.map(comment =>
-                            <li>{comment.user.name}: {comment.comment}</li>
+                            // console.log(comment)
+                            <div key={comment.id} className="commentList">
+                                <li>{comment.user.name}: {comment.comment}</li>
+                                {comment.userId === loggedInUser &&
+                                    <button className="btn btn-primary"
+                                        onClick={() => handleDeleteComment(comment.id)}
+                                    // disabled={isLoading}
+                                    >
+                                        Delete
+                                </button>
+
+                                }
+                            </div>
                         )}
                     </ul>
                 </>
@@ -96,24 +108,29 @@ export const EntryFeed = ({ entry, handleDeleteEntry, handleLike }) => {
         setIsLoading(true)
         addComment(comment)
             .then(() => history.push("/"))
-            getComments()
-            clearComment()
+        getComments()
+        clearComment()
 
     }
 
     const leaveComment = () => {
         // if (clicked === true) {
-            return (
-                <div className="leaveComment">
-                    <input type="text" className="commentForm" id="comment" required placeholder="Leave a comment..." value={comment.comment} onChange={handleInputChange} />
-                    <button className="btn btn-primary"
-                        onClick={handlePostComment}
-                        disabled={isLoading}>
-                        Post Comment
+        return (
+            <div className="leaveComment">
+                <input type="text" className="commentForm" id="comment" required placeholder="Leave a comment..." value={comment.comment} onChange={handleInputChange} />
+                <button className="btn btn-primary"
+                    onClick={handlePostComment}
+                    disabled={isLoading}>
+                    Post Comment
                 </button>
-                </div>
-            )
+            </div>
+        )
         // }
+    }
+
+    const handleDeleteComment = (id) => {
+        deleteComment(id)
+            .then(() => getComments())
     }
 
     // const displayComments = () => {
@@ -124,7 +141,7 @@ export const EntryFeed = ({ entry, handleDeleteEntry, handleLike }) => {
     //     }
     // }
 
-    
+
 
     useEffect(() => {
         getComments()
@@ -147,7 +164,8 @@ export const EntryFeed = ({ entry, handleDeleteEntry, handleLike }) => {
                         <Link to={`/entries/${entry.id}/editHome`}><button className="btn btn-primary" type="button">Edit</button></Link>
                         <button type="button" className="btn btn-primary" onClick={() => handleDeleteEntry(entry.id)}>Remove</button>
                         <div className="comments">
-                            {renderCommentList()}
+                            {/* {renderCommentList()} */}
+                            {renderFriendCommentList()}
                             {leaveComment()}
                         </div>
                     </section>

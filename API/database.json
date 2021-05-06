@@ -597,7 +597,7 @@
       "date": "2021-04-30",
       "mood": "Confident",
       "entry": "Testing 3",
-      "likes": 0,
+      "likes": 1,
       "timestamp": 1620241610285
     },
     {
@@ -623,7 +623,7 @@
       "date": "2021-05-05",
       "mood": "Confident",
       "entry": "Testing",
-      "likes": 1,
+      "likes": 2,
       "timestamp": 1620241657884
     }
   ],

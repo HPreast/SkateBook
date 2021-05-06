@@ -7,15 +7,15 @@ import { entryComments, addComment } from "../../modules/EntryManager"
 export const EntryFeed = ({ entry, handleDeleteEntry, handleLike }) => {
     const [isVisible, setIsVisible] = useState(false)
     const [comments, setComments] = useState({})
-    const [clicked, setClicked] = useState(false)
-    const [isLoading, setIsLoading] = useState(false)
+    // const [clicked, setClicked] = useState(false)
+    // const [isLoading, setIsLoading] = useState(false)
     const loggedInUser = JSON.parse(sessionStorage.getItem("headspace_user"))
     // const [comment, setComment] = useState({
     //     entryId: entry.id,
     //     userId: loggedInUser,
     //     comment: ""
     // })
-    const history = useHistory();
+    // const history = useHistory();
 
     // const loggedInUser = JSON.parse(sessionStorage.getItem("headspace_user"))
 
@@ -24,13 +24,13 @@ export const EntryFeed = ({ entry, handleDeleteEntry, handleLike }) => {
         let commentArr = [];
         entryComments(entry.id)
             .then(response => {
-                // console.log(response)
+                console.log(response)
                 commentArr = response.map((obj) => obj)
                 setComments(commentArr)
             })
 
     }
-    console.log(comments)
+    // console.log(comments)
 
     const renderCommentList = () => {
         if (isVisible === true) {

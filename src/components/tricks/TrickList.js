@@ -18,6 +18,7 @@ export const TrickList = () => {
     const getAllTricks = () => {
         getTricks()
         .then(response => setAllTricks(response))
+        // setTricks(allTricks)
     }
 
     const trickRelationship = () => {
@@ -25,31 +26,42 @@ export const TrickList = () => {
         .then(response => {
             let trickRelationsObj = response.map(userRes => userRes.trickId)
             setTrickRelations(trickRelationsObj)
+            console.log("trickRelations", trickRelations)
         })
-            
     }
 
-    const notTricks = () => {
-            let notMyTricks = [...allTricks];
-            for(var i = 0, len = trickRelations.length; i < len; i++) {
-                for(var j = 0, len2 = notMyTricks.length; j < len2; j++) {
-                    if (trickRelations[i] === notMyTricks[j].id) {
-                        notMyTricks.splice(j, 1);
-                        len2 = notMyTricks.length
-                    }
+     const notTricks = () => {
+        const resultArray = await Promise.all([getAllTricks(), trickRelationship()])
+        .then(() => {
+            
+        let notMyTricks = [...allTricks];
+        for(var i = 0, len = trickRelations.length; i < len; i++) {
+            for(var j = 0, len2 = notMyTricks.length; j < len2; j++) {
+                if (trickRelations[i] === notMyTricks[j].id) {
+                    notMyTricks.splice(j, 1);
+                    len2 = notMyTricks.length
                 }
             }
-            setTricks(notMyTricks)
+        }
+        console.log("notMyTricks", notMyTricks)
+        setTricks(notMyTricks)
+        console.log("tricks",tricks)
+        console.log("resultArray", resultArray)
+    });
     }
     
     useEffect(() => {
         getAllTricks()
-        trickRelationship()
+        .then(() => trickRelationship())
+        .then(() => notTricks())
+        
+        
         
     }, [])
-    useEffect(() => {
-        notTricks()
-    }, [trickRelations])
+    // useEffect(() => {
+    //     notTricks()
+        
+    // }, [])
     
     
     return (

@@ -660,7 +660,7 @@
       "id": 1,
       "userId": 1,
       "trickId": 2,
-      "isComplete": false
+      "isComplete": true
     },
     {
       "id": 3,

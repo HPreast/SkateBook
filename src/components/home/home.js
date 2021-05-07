@@ -12,10 +12,6 @@ export const HomePage = () => {
     const [tricks, setTricks] = useState([])
     const [library, setLibrary] = useState([])
     const [clicked, setClicked] = useState(true)
-    
-    // const [likes, setLikes] = useState({
-    //     count: 0
-    // })
 
     const history = useHistory();
     const {entryId} = useParams();
@@ -45,7 +41,6 @@ export const HomePage = () => {
         return getUserPracticeTricks(loggedInUser)
             .then(practice => {
                 let incomplete = practice.filter(trick => trick.isComplete === false)
-
                 setTricks(incomplete)
             })
     }
@@ -54,11 +49,9 @@ export const HomePage = () => {
         return getUserPracticeTricks(loggedInUser)
             .then(practice => {
                 let complete = practice.filter(trick => trick.isComplete === true)
-                // console.log(complete)
                 setLibrary(complete)
             })
     }
-
 
     const handleUpdate = (trick) => {
         let completedTrick = { ...trick }
@@ -71,7 +64,6 @@ export const HomePage = () => {
         updateList(newTrick)
             .then(() => trackedTricks())
             .then(() => libraryTricks())
-
     }
 
     const handleRecall = (trick) => {
@@ -85,7 +77,6 @@ export const HomePage = () => {
         updateList(newTrick)
             .then(() => trackedTricks())
             .then(() => libraryTricks())
-
     }
 
     const handleDelete = (id) => {
@@ -94,7 +85,6 @@ export const HomePage = () => {
             .then(() => libraryTricks())
     }
 
-    
     const handleDeleteEntry = (id) => {
         deleteEntry(id)
         .then(() => getEntries())
@@ -102,9 +92,7 @@ export const HomePage = () => {
     
     const handleLike = (entry) => {
         let likeCount = {...entry}
-        console.log(likeCount)
-        if(clicked === true) {
-            
+        if(clicked === true) {   
             const likedPost = {
                 id: likeCount.id,
                 userId: likeCount.userId,

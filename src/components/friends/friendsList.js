@@ -38,7 +38,6 @@ export const FriendsList = () => {
                     handleDelete={handleDelete}
                     />)}
             </div>
-            {/* <button type="button" id="addFriend" className="btn btn-primary" onClick={() => history.push("/friends/search")}>Add a Friend</button> */}
         </section>
     )
 }

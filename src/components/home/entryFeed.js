@@ -2,12 +2,10 @@ import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { useHistory } from "react-router";
 import { entryComments, addComment, deleteComment } from "../../modules/EntryManager"
-// import { CommentList } from "../home/commentList"
 
 export const EntryFeed = ({ entry, handleDeleteEntry, handleLike }) => {
     const [isVisible, setIsVisible] = useState(false)
     const [comments, setComments] = useState([])
-    const [clicked, setClicked] = useState(false)
     const [isLoading, setIsLoading] = useState(false)
     const loggedInUser = JSON.parse(sessionStorage.getItem("headspace_user"))
     const [comment, setComment] = useState({
@@ -17,75 +15,40 @@ export const EntryFeed = ({ entry, handleDeleteEntry, handleLike }) => {
     })
     const history = useHistory();
 
-    // const loggedInUser = JSON.parse(sessionStorage.getItem("headspace_user"))
-    // console.log()
     const getComments = () => {
 
         let commentArr = [];
         entryComments(entry.id)
             .then(response => {
-                // console.log(response)
                 commentArr = response.map((obj) => obj)
-                // console.log(commentArr)
                 setComments(commentArr)
             })
 
     }
-    // console.log(comments)
-
-    // const renderCommentList = () => {
-    //     if (isVisible === true) {
-    //         return (
-    //             <>
-    //                 <button type="button" className="btn btn-primary" onClick={() => setIsVisible(false)}>Hide Comments</button>
-    //                 <ul className="userComments">
-    //                     {comments?.map(comment =>
-    //                         <li>{comment.user.name}: {comment.comment}</li>
-    //                     )}
-    //                 </ul>
-    //             </>
-    //         )
-
-
-    //     } else {
-    //         <div></div>
-    //     }
-
-
-    // }
 
     const renderFriendCommentList = () => {
         if (isVisible === true) {
             return (
                 <>
                     <button type="button" className="btn btn-primary" onClick={() => setIsVisible(false)}>Hide Comments</button>
-                    {/* <button type="button" className="btn btn-primary" onClick={() => setClicked(true)}>Leave a Comment</button> */}
                     <ul className="friendComments">
                         {comments.map(comment =>
-                            // console.log(comment)
                             <div key={comment.id} className="commentList">
                                 <li>{comment.user.name}: {comment.comment}</li>
                                 {comment.userId === loggedInUser &&
                                     <button className="btn btn-primary"
-                                        onClick={() => handleDeleteComment(comment.id)}
-                                    // disabled={isLoading}
-                                    >
+                                        onClick={() => handleDeleteComment(comment.id)}>
                                         Delete
                                 </button>
-
                                 }
                             </div>
                         )}
                     </ul>
                 </>
             )
-
-
         } else {
             <div></div>
         }
-
-
     }
 
     const handleInputChange = (event) => {

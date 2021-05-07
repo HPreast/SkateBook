@@ -602,57 +602,94 @@
   ],
   "entries": [
     {
-      "id": 5,
       "userId": 1,
-      "date": "2021-04-30",
+      "timestamp": 1620357179997,
+      "date": "2021-05-01",
       "mood": "Confident",
-      "entry": "Testing  3",
+      "entry": "Landed my pop shuvits pretty consistently today, hoping to lock it in soon",
       "likes": 0,
-      "timestamp": 1619797506442
+      "id": 1
     },
     {
-      "id": 6,
       "userId": 1,
-      "date": "2021-04-30",
+      "timestamp": 1620357193380,
+      "date": "2021-05-03",
+      "mood": "Stoked",
+      "entry": "Getting more comfortable landing on the board after it flips.",
+      "likes": 0,
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "timestamp": 1620357204485,
+      "date": "2021-05-04",
+      "mood": "Sad",
+      "entry": "It rained all day today so I didn't get to skate. :(",
+      "likes": 0,
+      "id": 3
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "date": "2021-05-06",
+      "mood": "Bummed Out",
+      "entry": "I went to skate in the driveway during lunch today and rolled my ankle, ouch.",
+      "likes": 2,
+      "timestamp": 1620357219312
+    },
+    {
+      "id": 5,
+      "userId": 9,
+      "date": "2021-05-01",
+      "mood": "Happy",
+      "entry": "I bought my first skateboard today!!! I can't wait to start learning how to ride!",
+      "likes": 0,
+      "timestamp": 1620357179998
+    },
+    {
+      "userId": 9,
+      "timestamp": 1620357179996,
+      "date": "2021-05-01",
       "mood": "Confident",
-      "entry": "Landed my first pop shuvit today!!!!!!!",
-      "likes": 1,
-      "timestamp": 1619797418985
+      "entry": "I rode my new board around the driveway as soon as I got home from the store! It's scary but lots of fun!",
+      "likes": 0,
+      "id": 6
     },
     {
       "id": 7,
-      "userId": 2,
-      "date": "2021-04-30",
-      "mood": "Confident",
-      "entry": "Testing 3",
+      "userId": 9,
+      "date": "2021-05-04",
+      "mood": "Sore :(",
+      "entry": "I went to the skatepark near my house with some friends today, turns out I'm not so good with ramps...",
       "likes": 1,
-      "timestamp": 1620241610285
+      "timestamp": 1620357204482
+    },
+    {
+      "userId": 4,
+      "timestamp": 1620357193381,
+      "date": "2021-05-03",
+      "mood": "Stoked",
+      "entry": "Had a great street sesh with the homies today, may have broken a board or two but it was worth it!",
+      "likes": 0,
+      "id": 8
     },
     {
       "id": 9,
-      "userId": 1,
+      "userId": 4,
       "date": "2021-05-05",
-      "mood": "Confident",
-      "entry": "Testing",
+      "mood": "Adventurous",
+      "entry": "Sooooo much rain this year, time to find some new indoor spots. :)",
       "likes": 1,
-      "timestamp": 1620240587240
+      "timestamp": 1620357219311
     },
     {
-      "id": 11,
-      "userId": 1,
-      "date": "2021-05-05",
-      "mood": "Nervous",
-      "entry": "Testing 6",
-      "timestamp": 1620242130589
-    },
-    {
-      "id": 12,
-      "userId": 2,
-      "date": "2021-05-05",
-      "mood": "Confident",
-      "entry": "Testing",
-      "likes": 2,
-      "timestamp": 1620241657884
+      "userId": 4,
+      "timestamp": 1620357219313,
+      "date": "2021-05-06",
+      "mood": "Psyched",
+      "entry": "New video coming soon, better go get some clips.",
+      "likes": 0,
+      "id": 10
     }
   ],
   "practice": [
@@ -711,16 +748,148 @@
       "id": 13
     },
     {
+      "id": 14,
       "userId": 1,
       "trickId": 5,
-      "isComplete": false,
-      "id": 14
+      "isComplete": true
     },
     {
       "userId": 2,
       "trickId": 4,
       "isComplete": false,
       "id": 15
+    },
+    {
+      "userId": 1,
+      "trickId": 25,
+      "isComplete": true,
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "trickId": 4,
+      "isComplete": true,
+      "id": 17
+    },
+    {
+      "userId": 1,
+      "trickId": 3,
+      "isComplete": false,
+      "id": 18
+    },
+    {
+      "userId": 1,
+      "trickId": 28,
+      "isComplete": true,
+      "id": 19
+    },
+    {
+      "userId": 1,
+      "trickId": 9,
+      "isComplete": true,
+      "id": 20
+    },
+    {
+      "userId": 1,
+      "trickId": 8,
+      "isComplete": false,
+      "id": 21
+    },
+    {
+      "userId": 9,
+      "trickId": 1,
+      "isComplete": false,
+      "id": 22
+    },
+    {
+      "userId": 9,
+      "trickId": 5,
+      "isComplete": false,
+      "id": 23
+    },
+    {
+      "userId": 9,
+      "trickId": 11,
+      "isComplete": false,
+      "id": 24
+    },
+    {
+      "userId": 4,
+      "trickId": 3,
+      "isComplete": true,
+      "id": 25
+    },
+    {
+      "userId": 4,
+      "trickId": 8,
+      "isComplete": true,
+      "id": 26
+    },
+    {
+      "userId": 4,
+      "trickId": 10,
+      "isComplete": false,
+      "id": 27
+    },
+    {
+      "userId": 4,
+      "trickId": 17,
+      "isComplete": true,
+      "id": 28
+    },
+    {
+      "userId": 4,
+      "trickId": 15,
+      "isComplete": true,
+      "id": 29
+    },
+    {
+      "userId": 4,
+      "trickId": 2,
+      "isComplete": true,
+      "id": 30
+    },
+    {
+      "userId": 4,
+      "trickId": 16,
+      "isComplete": true,
+      "id": 31
+    },
+    {
+      "userId": 4,
+      "trickId": 19,
+      "isComplete": false,
+      "id": 32
+    },
+    {
+      "userId": 4,
+      "trickId": 29,
+      "isComplete": true,
+      "id": 33
+    },
+    {
+      "userId": 4,
+      "trickId": 14,
+      "isComplete": false,
+      "id": 34
+    },
+    {
+      "userId": 4,
+      "trickId": 12,
+      "isComplete": true,
+      "id": 35
+    },
+    {
+      "userId": 4,
+      "trickId": 13,
+      "isComplete": true,
+      "id": 36
+    },
+    {
+      "userId": 4,
+      "trickId": 30,
+      "isComplete": true,
+      "id": 37
     }
   ],
   "friends": [
@@ -743,20 +912,62 @@
       "currentUserId": 1,
       "userId": 4,
       "id": 4
+    },
+    {
+      "currentUserId": 1,
+      "userId": 9,
+      "id": 5
+    },
+    {
+      "currentUserId": 1,
+      "userId": 7,
+      "id": 6
+    },
+    {
+      "currentUserId": 9,
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "currentUserId": 4,
+      "userId": 1,
+      "id": 8
+    },
+    {
+      "currentUserId": 4,
+      "userId": 6,
+      "id": 9
+    },
+    {
+      "currentUserId": 4,
+      "userId": 5,
+      "id": 10
     }
   ],
   "comments": [
     {
-      "id": 1,
-      "entryId": 11,
-      "userId": 3,
-      "comment": "Don't be nervous my dude, you got it!"
+      "entryId": 7,
+      "userId": 1,
+      "comment": "You'll get used to it, falling is part of the process!",
+      "id": 1
     },
     {
-      "id": 2,
-      "entryId": 12,
-      "userId": 3,
-      "comment": "Nice Test!"
+      "entryId": 7,
+      "userId": 9,
+      "comment": "@Hunter Preast you're right, back at it tomorrow for sure!",
+      "id": 2
+    },
+    {
+      "entryId": 9,
+      "userId": 1,
+      "comment": "I agree, time to get creative",
+      "id": 3
+    },
+    {
+      "entryId": 4,
+      "userId": 4,
+      "comment": "All good man, RICE and get back to it!",
+      "id": 4
     }
   ]
 }

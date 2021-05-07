@@ -59,31 +59,12 @@ margin: 0;
     height: auto;
     border: 3px solid #EBFBFA;
 }
-/* .libraryCard {
-    background: #EBFBFA;
-    margin: 1em;
-    text-align: center;
-    height: auto;
-}
-.libraryCard button {
-    display: inline;
-    align-items:flex-end;
-}
-.practiceCard {
-    background: #EBFBFA;
-    margin: 1em;
-    text-align: center;
-    height: auto;
-} */
 
 .userComments {
-    /* display: flex; */
     list-style-type: none;
     background:#C0EDE9;
     margin: 0;
-    border: 3px solid #EBFBFA;
-    /* justify-content: flex-start; */
-    
+    border: 3px solid #EBFBFA;    
 }
 .friendComments {
     list-style-type: none;

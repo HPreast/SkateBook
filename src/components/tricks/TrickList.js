@@ -30,7 +30,7 @@ export const TrickList = () => {
         })
     }
 
-     const notTricks = () => {
+    const notTricks = () => {
         const resultArray = await Promise.all([getAllTricks(), trickRelationship()])
         .then(() => {
             

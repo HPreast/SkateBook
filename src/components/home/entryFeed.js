@@ -108,9 +108,9 @@ export const EntryFeed = ({ entry, handleDeleteEntry, handleLike }) => {
         setIsLoading(true)
         addComment(comment)
             .then(() => history.push("/"))
-        getComments()
+        .then(() =>getComments())
         clearComment()
-
+        
     }
 
     const leaveComment = () => {
@@ -119,8 +119,8 @@ export const EntryFeed = ({ entry, handleDeleteEntry, handleLike }) => {
             <div className="leaveComment">
                 <input type="text" className="commentForm" id="comment" required placeholder="Leave a comment..." value={comment.comment} onChange={handleInputChange} />
                 <button className="btn btn-primary"
-                    onClick={handlePostComment}
-                    disabled={isLoading}>
+                    onClick={handlePostComment}>
+                    {/* // disabled={isLoading}> */}
                     Post Comment
                 </button>
             </div>

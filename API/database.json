@@ -8,15 +8,15 @@
       "bio": "Skater from Nashville trying to improve and learn some new things."
     },
     {
-      "email": "Bryan@email.com",
+      "email": "bryan@email.com",
       "name": "Bryan Ford",
       "id": 2,
       "photo": "",
       "bio": "Sponsored skater trying to get more organized."
     },
     {
-      "email": "ethan@email.com",
-      "name": "Ethan Mathis",
+      "email": "hollie@email.com",
+      "name": "Hollie Cole",
       "id": 3,
       "photo": "",
       "bio": ""
@@ -36,9 +36,37 @@
       "bio": ""
     },
     {
-      "email": "chris@email.com",
-      "name": "Ishod Ware",
+      "email": "ishod@email.com",
+      "name": "Ishod Wair",
       "id": 6,
+      "photo": "",
+      "bio": ""
+    },
+    {
+      "email": "alicia@email.com",
+      "name": "Alicia Guevara",
+      "id": 7,
+      "photo": "",
+      "bio": ""
+    },
+    {
+      "email": "chloe@email.com",
+      "name": "Chloe Rivera",
+      "id": 8,
+      "photo": "",
+      "bio": ""
+    },
+    {
+      "email": "katie@email.com",
+      "name": "Katie Trewella",
+      "id": 9,
+      "photo": "",
+      "bio": ""
+    },
+    {
+      "email": "ellie@email.com",
+      "name": "Ellie Trewhella",
+      "id": 10,
       "photo": "",
       "bio": ""
     }
@@ -632,7 +660,7 @@
       "id": 1,
       "userId": 1,
       "trickId": 2,
-      "isComplete": false
+      "isComplete": true
     },
     {
       "id": 3,
@@ -729,24 +757,6 @@
       "entryId": 12,
       "userId": 3,
       "comment": "Nice Test!"
-    },
-    {
-      "entryId": 11,
-      "userId": 1,
-      "comment": "nice test",
-      "id": 5
-    },
-    {
-      "entryId": 11,
-      "userId": 1,
-      "comment": "testy 1",
-      "id": 6
-    },
-    {
-      "entryId": 11,
-      "userId": 1,
-      "comment": "hello",
-      "id": 8
     }
   ]
 }

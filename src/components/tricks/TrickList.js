@@ -11,17 +11,20 @@ export const TrickList = () => {
     const [tricks, setTricks] = useState([]);
     const [trickRelations, setTrickRelations] = useState([])
     const [allTricks, setAllTricks] = useState([])
+
     const loggedInUser = JSON.parse(sessionStorage.getItem("headspace_user"))
-    console.log(tricks)
+
     const getAllTricks = () => {
         return getTricks().then(allTricksFromAPI => setAllTricks(allTricksFromAPI))
     }
+
     const trickRelationship = () => {
         return getUserPracticeTricks(loggedInUser).then(userPracticeTricksFromAPI => {
                 let trickRelationsObj = userPracticeTricksFromAPI.map(userRes => userRes.trickId)
                 setTrickRelations(trickRelationsObj)
             })
     }
+
     const notTricks = () => {
         let notMyTricks = [...allTricks];
         for (var i = 0, len = trickRelations.length; i < len; i++) {
@@ -34,6 +37,7 @@ export const TrickList = () => {
         }
         setTricks(notMyTricks)
     }
+    
     useEffect(() => {
         getAllTricks()
             .then(() => trickRelationship())

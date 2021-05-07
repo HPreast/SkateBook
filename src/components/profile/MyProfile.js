@@ -40,7 +40,6 @@ export const MyProfile = () => {
         return getUserPracticeTricks(loggedInUser)
             .then(practice => {
                 let incomplete = practice.filter(trick => trick.isComplete === false)
-
                 setTricks(incomplete)
             })
     }
@@ -49,7 +48,6 @@ export const MyProfile = () => {
         return getUserPracticeTricks(loggedInUser)
             .then(practice => {
                 let complete = practice.filter(trick => trick.isComplete === true)
-                // console.log(complete)
                 setLibrary(complete)
             })
     }

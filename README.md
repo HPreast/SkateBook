@@ -8,7 +8,7 @@ While on the home page, the user is able to view and modify their library and pr
 The Trick List page includes the list of trick cards that when selected will route the user to a trick details view allowing the user to view a description, tips, and how to video for each trick. If the user decides they would like to add the trick to one of their lists then the user is able to select an affordance to send the trick to the desired list.
 
 ## My Profile
-When a userr is viewing their profile, they will be shown a list of people the user follows, the users profile information, a section showing the user's past journal entries which can be modified, as well as both the users library and practice list which can also be modified from this view.<hr></hr>
+When a user is viewing their profile, they will be shown a list of people the user follows, the users profile information, a section showing the user's past journal entries which can be modified, as well as both the users library and practice list which can also be modified from this view.<hr></hr>
 
 ## Technologies
 <ul>

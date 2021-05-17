@@ -23,13 +23,17 @@ When a userr is viewing their profile, they will be shown a list of people the u
 ## How to Run the App
 In your terminal, navigate to the directory you wish to create the app in and type:
 `git@github.com:HPreast/SkateBook.git`
+
 Once you've cloned it down, cd into that directory and install the additional dependancies by running:
 `npm install`
+
 Once everything is installed cd to the source directory and run:
 `npm start`
+
 Next open another tab in your terminal and cd into the API directory from source and run:
 `json-server -p 8088 -w database.json`
 
-
+## WireFrame
 <img src="public\SkateBookWireFrame.PNG">
+## ERD
 <img src="public\SkateBookERD.PNG">

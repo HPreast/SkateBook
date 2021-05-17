@@ -23,7 +23,7 @@ When a userr is viewing their profile, they will be shown a list of people the u
 ## How to Run the App
 In your terminal, navigate to the directory you wish to create the app in and type:
 
-`git@github.com:HPreast/SkateBook.git`
+`git clone git@github.com:HPreast/SkateBook.git`
 
 Once you've cloned it down, cd into that directory and install the additional dependancies by running:
 

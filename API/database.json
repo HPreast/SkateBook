@@ -633,9 +633,8 @@
       "userId": 1,
       "date": "2021-05-06",
       "mood": "Bummed Out",
-      "entry": "I went to skate in the driveway during lunch today and rolled my ankle, ouch.",
-      "likes": 2,
-      "timestamp": 1620357219312
+      "entry": "I went to skate in the driveway during lunch today and rolled my ankle, ouch!",
+      "timestamp": 1620402953297
     },
     {
       "id": 5,
@@ -679,26 +678,20 @@
       "date": "2021-05-05",
       "mood": "Adventurous",
       "entry": "Sooooo much rain this year, time to find some new indoor spots. :)",
-      "likes": 1,
+      "likes": 2,
       "timestamp": 1620357219311
     },
     {
+      "id": 10,
       "userId": 4,
-      "timestamp": 1620357219313,
       "date": "2021-05-06",
       "mood": "Psyched",
       "entry": "New video coming soon, better go get some clips.",
       "likes": 0,
-      "id": 10
+      "timestamp": 1620357219313
     }
   ],
   "practice": [
-    {
-      "id": 1,
-      "userId": 1,
-      "trickId": 2,
-      "isComplete": true
-    },
     {
       "id": 3,
       "userId": 1,
@@ -790,10 +783,10 @@
       "id": 20
     },
     {
+      "id": 21,
       "userId": 1,
       "trickId": 8,
-      "isComplete": false,
-      "id": 21
+      "isComplete": true
     },
     {
       "userId": 9,
@@ -890,6 +883,12 @@
       "trickId": 30,
       "isComplete": true,
       "id": 37
+    },
+    {
+      "userId": 1,
+      "trickId": 7,
+      "isComplete": false,
+      "id": 38
     }
   ],
   "friends": [
@@ -942,6 +941,11 @@
       "currentUserId": 4,
       "userId": 5,
       "id": 10
+    },
+    {
+      "currentUserId": 1,
+      "userId": 5,
+      "id": 11
     }
   ],
   "comments": [

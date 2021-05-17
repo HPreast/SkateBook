@@ -37,7 +37,6 @@ Next open another tab in your terminal and cd into the API directory from source
 
 `json-server -p 8088 -w database.json`
 
-## WireFrame
+## WireFrame & ERD
 <img src="public\SkateBookWireFrame.PNG">
-## ERD
 <img src="public\SkateBookERD.PNG">
